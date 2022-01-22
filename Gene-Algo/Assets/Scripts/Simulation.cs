@@ -1,13 +1,4 @@
-﻿/* This class is the driver whose main job is to initalize all of the components
- * required for the GA and run generations endlessly until stopped by a user. The
- * components that it directly instantiates are the Dashboard and the Genepool.
- * Afterwards it will check on the generation every 5 seconds and will spawn the next
- * generation when all cars have crashed.
- * 
- * This script is a component of the Terrain game object.
- *
- */
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Simulation : MonoBehaviour
@@ -23,11 +14,6 @@ public class Simulation : MonoBehaviour
     private int generationNumber;
 
 
-    /* When this script is started:
-     *   1. Instantiate the genepool
-     *   2. Start function that will check on gene pool periodically
-     *   3. Initialize dashboard 
-     */
     void Start()
     {
         // Need an even and positive population size
@@ -62,9 +48,7 @@ public class Simulation : MonoBehaviour
         dashboard.InitializeDashboard(this.GetGenerationData());
     }
 
-    /* Check if this generation has crashed yet.
-     * If it has, inform the genepool so that it can perform the pre-defined genetic operators
-     * and spawn the next generation. */
+
     void CheckOnGeneration()
     {
         // If this whole generation has crashed

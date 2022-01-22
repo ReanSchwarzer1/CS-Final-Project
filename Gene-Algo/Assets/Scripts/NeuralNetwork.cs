@@ -1,9 +1,4 @@
-﻿/* This class contains all of the functionality related to the neural network.
- *
- * Code inspirded by: https://towardsdatascience.com/building-a-neural-network-framework-in-c-16ef56ce1fef
-*/
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 

@@ -1,9 +1,4 @@
-﻿/* This class contains the implementation of the Genepool which contains
- * a pool of all the structures in this generation.
- * 
- *  Class inspired by: Andrew Burton Groeneveldt
- */
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 public class Genepool
 {
@@ -78,11 +73,7 @@ public class Genepool
         return true;
     }
 
-    /* This next generation is spawned as follows:
-     *   1. Sort the population based on their fitness
-     *   2. Select the top 50 percentile
-     *   3. The top 50 percentile will create a clone of itself and this clone is mutated
-     *   4. The original structures of the top 50 percentile move on without mutation */ 
+
     public void NextGeneration()
     {
         List<Structure> newPool = new List<Structure>();

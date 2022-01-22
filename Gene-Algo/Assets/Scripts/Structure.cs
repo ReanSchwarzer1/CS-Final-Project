@@ -1,10 +1,4 @@
-﻿/*  Implementation of the potential solutions that are tested in the Environment.
- *  When instantiated, objects of this class type will contain a genome, a car,
- *  and a Neural Network.
- *
- *  Class inspired by: Andrew Burton Groeneveldt
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;

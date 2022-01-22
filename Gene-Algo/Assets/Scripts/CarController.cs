@@ -1,11 +1,3 @@
-/* This is the main class that allows a car to interact with the environment
- * This class contains the logic that allows a car to drive, detect collisions
- * with walls, and the logic for the proximity sensors.
- *
- * This class also contains the logic that feeds the input of the environment
- * into the neural network, retrieves these results, and then applys the action
- * that the neural network has recommended. */
-
 using UnityEngine;
 
 public class CarController : MonoBehaviour
