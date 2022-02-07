@@ -1,0 +1,443 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 8058 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\UnityDev\2020.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/FinalYearProj/CS-Final-Project/Gene-Algo
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61791
+Successfully changed project path to: E:/FinalYearProj/CS-Final-Project/Gene-Algo
+E:/FinalYearProj/CS-Final-Project/Gene-Algo
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 162.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path D:/UnityDev/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/FinalYearProj/CS-Final-Project/Gene-Algo/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x134d)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'D:/UnityDev/2020.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityDev/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/UnityDev/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityDev/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003065 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 134.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.512 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2513ms)
+		BeginReloadAssembly (261ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (1962ms)
+			LoadAssemblies (259ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (753ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (119ms)
+			SetupLoadedEditorAssemblies (698ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (134ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (389ms)
+				ProcessInitializeOnLoadMethodAttributes (111ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.021633 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.149 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4153ms)
+		BeginReloadAssembly (650ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (3273ms)
+			LoadAssemblies (406ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1168ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (198ms)
+			SetupLoadedEditorAssemblies (1171ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (317ms)
+				ProcessInitializeOnLoadAttributes (782ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1515 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1963.
+Total: 10.358400 ms (FindLiveObjects: 0.434200 ms CreateObjectMapping: 0.180000 ms MarkObjects: 8.967500 ms  DeleteObjects: 0.774000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/NewBrush.brush
+  artifactKey: Guid(ed867d0f761835740a9dcc6b2c2f9c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewBrush.brush using Guid(ed867d0f761835740a9dcc6b2c2f9c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eaad72d6d40bb1b827d3313540324a8') in 0.433291 seconds 
+  Import took 0.445635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000761 seconds.
+  path: Assets/Snow mountain tracks/Terrain textures/Albedo/rock 1.tga
+  artifactKey: Guid(88e530318f93b184aa0e7c056b768a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/Terrain textures/Albedo/rock 1.tga using Guid(88e530318f93b184aa0e7c056b768a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba3fd85ca540eded64d890672ed67af') in 0.298061 seconds 
+  Import took 0.311102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.789539 seconds.
+  path: Assets/_TerrainAutoUpgrade
+  artifactKey: Guid(bfa66b8fd2363cf499b4aff46bdce537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_TerrainAutoUpgrade using Guid(bfa66b8fd2363cf499b4aff46bdce537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0045808e4cb2f8871f123ba57e9fed7') in 0.024569 seconds 
+  Import took 0.036551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 288.966628 seconds.
+  path: Assets/Trees_WorldSpace_FREE
+  artifactKey: Guid(428218b90bcc61c4da9595e4556d7520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Trees_WorldSpace_FREE using Guid(428218b90bcc61c4da9595e4556d7520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3872a8b68240843d0ae68d20d2c8ae85') in 0.012450 seconds 
+  Import took 0.018906 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.375812 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.036 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2037ms)
+		BeginReloadAssembly (243ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1672ms)
+			LoadAssemblies (235ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (619ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (566ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (367ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1528 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 86.9 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1990.
+Total: 5.875300 ms (FindLiveObjects: 0.220500 ms CreateObjectMapping: 0.088100 ms MarkObjects: 5.012500 ms  DeleteObjects: 0.552400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3252.810618 seconds.
+  path: Assets/Krearthur/GOPainter
+  artifactKey: Guid(997a1c3b32109c1429c11a801f51a674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter using Guid(997a1c3b32109c1429c11a801f51a674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fb42b641aa09816dbaf1c7af950ad3') in 0.016786 seconds 
+  Import took 0.022985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.007287 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Crate.prefab
+  artifactKey: Guid(395a012b689703f4784206747796ae46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Crate.prefab using Guid(395a012b689703f4784206747796ae46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b2222343646ea8d1e7c4e3e2fa5bcb') in 0.129471 seconds 
+  Import took 0.133538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/FlowerB.prefab
+  artifactKey: Guid(201397c1787b9284789d4914603ecbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/FlowerB.prefab using Guid(201397c1787b9284789d4914603ecbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5c518e231a4e184beffbba9421abdb') in 0.031704 seconds 
+  Import took 0.036104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/FlowerA.fbx
+  artifactKey: Guid(0b29c3dce179d3e4a963aab700576c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/FlowerA.fbx using Guid(0b29c3dce179d3e4a963aab700576c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f473c528671139c3e4bc0c1c065f830') in 0.115508 seconds 
+  Import took 0.119020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/FlowerB.fbx
+  artifactKey: Guid(452350b71da23ec4797f1bf1d71f6dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/FlowerB.fbx using Guid(452350b71da23ec4797f1bf1d71f6dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cda0bb0dc4b1bf3325afde8533b628d') in 0.033028 seconds 
+  Import took 0.036462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/FlowerA.prefab
+  artifactKey: Guid(9a8f21ee4bf4b1642a35e8aa77e8c7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/FlowerA.prefab using Guid(9a8f21ee4bf4b1642a35e8aa77e8c7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9649690ee7b98b0e2a72071443ee0c') in 0.024896 seconds 
+  Import took 0.029055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/Crate.fbx
+  artifactKey: Guid(1ad888f60875e1148a26e14b6f75d857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/Crate.fbx using Guid(1ad888f60875e1148a26e14b6f75d857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865859be2242e8fb559485dd5b02face') in 0.031891 seconds 
+  Import took 0.037109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.946562 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/Fungi.fbx
+  artifactKey: Guid(3acdec6b773301a43bec79ffa05f2765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/Fungi.fbx using Guid(3acdec6b773301a43bec79ffa05f2765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2239a281d22c7569401ecb7d1560e4e') in 0.031311 seconds 
+  Import took 0.034641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Fungi.prefab
+  artifactKey: Guid(9982fc6fe21571b4fbbf3e7fcbb4892b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Fungi.prefab using Guid(9982fc6fe21571b4fbbf3e7fcbb4892b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45da1440a7adfd8f155c6b8a3c769d6a') in 0.060668 seconds 
+  Import took 0.066975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/Grass.fbx
+  artifactKey: Guid(eef2774f8ace0a14b979c4e3aa69d82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/Grass.fbx using Guid(eef2774f8ace0a14b979c4e3aa69d82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01c7dee1b83fe6c9699448078122bb3') in 0.028507 seconds 
+  Import took 0.033628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Grass.prefab
+  artifactKey: Guid(79f00eb615b8a52469522bfc077631d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Grass.prefab using Guid(79f00eb615b8a52469522bfc077631d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d2797c78d4489065e16104d727edb8') in 0.019777 seconds 
+  Import took 0.024786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.433554 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyCloud.fbx
+  artifactKey: Guid(78cab69d1d36b70469536574bb1b9876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyCloud.fbx using Guid(78cab69d1d36b70469536574bb1b9876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb705177d628341249575195ef861a9') in 0.031114 seconds 
+  Import took 0.035145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/LowPolyRock.prefab
+  artifactKey: Guid(a4e4eb3df5384e945a8eb8922dca0cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/LowPolyRock.prefab using Guid(a4e4eb3df5384e945a8eb8922dca0cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43867692c281d216c63b9c6893185ade') in 0.049775 seconds 
+  Import took 0.053106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000661 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/LowPolyCloud.prefab
+  artifactKey: Guid(c5d9c1200bc34e742a516182abb96fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/LowPolyCloud.prefab using Guid(c5d9c1200bc34e742a516182abb96fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12f7f5ce1643ece59f4c067e2ed8406') in 0.021677 seconds 
+  Import took 0.025596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.840832 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyRock.fbx
+  artifactKey: Guid(5007c3be1d94eba48bc85788e0b19e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyRock.fbx using Guid(5007c3be1d94eba48bc85788e0b19e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ab70f9c1be33ff405dd39c5a5b57f1') in 0.047867 seconds 
+  Import took 0.057965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000554 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/LowPolyRockCliff.prefab
+  artifactKey: Guid(e1c58761d345afe4482e73e099ee3422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/LowPolyRockCliff.prefab using Guid(e1c58761d345afe4482e73e099ee3422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a979951e95feb06be1e1deec626a2d0') in 0.033673 seconds 
+  Import took 0.038910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.407924 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyRockCliff.fbx
+  artifactKey: Guid(c77c8797453f09441a2fe167efede1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyRockCliff.fbx using Guid(c77c8797453f09441a2fe167efede1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2624842474343a2673a3f6e26da65e3') in 0.054923 seconds 
+  Import took 0.063176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.356707 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/Palm.fbx
+  artifactKey: Guid(84c6798b491bc32498b783539eba3baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/Palm.fbx using Guid(84c6798b491bc32498b783539eba3baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c79da6a21c7f5c7883744823ff9e1f9') in 0.029874 seconds 
+  Import took 0.033208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.956089 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Palm.prefab
+  artifactKey: Guid(5c11f4ab849016741a77888aacfb0208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Palm.prefab using Guid(5c11f4ab849016741a77888aacfb0208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21052811885c78e99c01935e519cbe2e') in 0.043614 seconds 
+  Import took 0.052446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.628807 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/Stone.fbx
+  artifactKey: Guid(9b3decdab45e917489a1abf9fce4521e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/Stone.fbx using Guid(9b3decdab45e917489a1abf9fce4521e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e339e675b017d329526e1453e792d6') in 0.054156 seconds 
+  Import took 0.064975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000553 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Stone.prefab
+  artifactKey: Guid(d5c3f0f278056a64b9e283aa07ee106f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Stone.prefab using Guid(d5c3f0f278056a64b9e283aa07ee106f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0089683b2c38607f9148f6b7d8ff1f65') in 0.022693 seconds 
+  Import took 0.027720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.642922 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/Tree.fbx
+  artifactKey: Guid(55f00e08b05b9b54c9688a7b4561b76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/Tree.fbx using Guid(55f00e08b05b9b54c9688a7b4561b76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0742da07690c0cb980ea1012724e93') in 0.064089 seconds 
+  Import took 0.073602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.056308 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Tree.prefab
+  artifactKey: Guid(1dfb0d24a6590034cac64fa2f18dcfd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/Tree.prefab using Guid(1dfb0d24a6590034cac64fa2f18dcfd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2e83b154487189d581c325c4493bc2') in 0.034931 seconds 
+  Import took 0.041282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Prefabs/Tree (4).prefab
+  artifactKey: Guid(bb3f173dcaecf2d4f86b8daf1966035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tree (4).prefab using Guid(bb3f173dcaecf2d4f86b8daf1966035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfb3bad005680cd5ceec274957e2767') in 0.124540 seconds 
+  Import took 0.128491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.825934 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/TreeEmpty.prefab
+  artifactKey: Guid(efcccb791f116de44bbadcd2d719ffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/TreeEmpty.prefab using Guid(efcccb791f116de44bbadcd2d719ffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e0c060ea6eee1f871bba82a195c2c7') in 0.048795 seconds 
+  Import took 0.057397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/WoodenFence.prefab
+  artifactKey: Guid(435767a7aff82c3448447ddef95c306b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Prefabs/WoodenFence.prefab using Guid(435767a7aff82c3448447ddef95c306b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d76266d174acd77fba18687d0c4143b') in 0.026025 seconds 
+  Import took 0.030783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Krearthur/GOPainter/ExampleAssets/Models/WoodenFence.fbx
+  artifactKey: Guid(f187424d4ce9d6948a6cda6e9ba036bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/ExampleAssets/Models/WoodenFence.fbx using Guid(f187424d4ce9d6948a6cda6e9ba036bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90abd3549910ec085840d035ba20f113') in 0.026727 seconds 
+  Import took 0.030745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12000.436633 seconds.
+  path: Assets/Krearthur/GOPainter/[GOPainter].prefab
+  artifactKey: Guid(9d2af0a0539325947a0d424e1e4af2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Krearthur/GOPainter/[GOPainter].prefab using Guid(9d2af0a0539325947a0d424e1e4af2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88c4826c4ef6b70646021381f24e3a6') in 0.085139 seconds 
+  Import took 0.095821 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
