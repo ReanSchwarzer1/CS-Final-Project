@@ -37,7 +37,6 @@ public class DashboardManager : MonoBehaviour
         string playbackSpeedVal;
         generationData.TryGetValue("playBackSpeed", out playbackSpeedVal);
 
-        // Fix UI component
         generationValue.text = generationVal;
         populationValue.text = populationVal;
         mutationRateValue.text = mutationRateVal + "%";
@@ -73,7 +72,7 @@ public class DashboardManager : MonoBehaviour
     public void UpdateChart(int fitness)
     {
         valuesList.Add(fitness);
-        // Remove the first element if it exceeds the max
+
         if(valuesList.Count > 10) {
             valuesList.RemoveAt(0);
             startingGen++;

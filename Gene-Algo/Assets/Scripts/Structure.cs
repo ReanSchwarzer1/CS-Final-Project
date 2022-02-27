@@ -15,21 +15,15 @@ public class Structure: MonoBehaviour, IComparable<Structure>
     private CarController car;
     private NeuralNetwork neuralNetwork;
 
-    //Has access to car prefab and spawns it
     public Structure(List<float> _genome)
     {
         genome = _genome;
-
-        // Instantiate the car at the starting line
         GameObject instance = Resources.Load("HatchBack") as GameObject;
         car = (Instantiate(instance)).GetComponent<CarController>();
         GameObject startingLine = GameObject.Find("Starting Line");
         car.transform.position = startingLine.gameObject.transform.position;
-
-        // Instantiate the Neural Network object
         neuralNetwork = new NeuralNetwork(LAYER_SIZES);
 
-        // If the genome is invalid, create a new random genome
         if (genome.Count != GENOME_LENGTH)
         {
             for (int i = 0; i < GENOME_LENGTH; i++)
@@ -61,16 +55,31 @@ public class Structure: MonoBehaviour, IComparable<Structure>
     }
     #endregion
 
-    // Configures the neural network with the genome of this structure
-    // and starts the car on the track
+    public void Mutate(int mutationRate, float mutationRadius)
+    {
+        for (int i = 0; i < genome.Count; i++)
+        {
+            genome[i] = (UnityEngine.Random.Range(0, 100) <= mutationRate) ? genome[i] += UnityEngine.Random.Range(-mutationRadius, mutationRadius) : genome[i];
+        }
+    }
+
+    public List<float> deepCopyGenome()
+    {
+        List<float> genomeCopy = new List<float>();
+        for (int i = 0; i < genome.Count; i++)
+        {
+            genomeCopy.Add(genome[i]);
+        }
+
+        return genomeCopy;
+    }
+
     public void Evaluate()
     {
         neuralNetwork.ConfigureNeuralNetwork(genome);
         car.SetNeuralNetwork(neuralNetwork);
     }
 
-    // This is used by the IComparable<Structure> interface to enable the sort() function
-    // for a list of these classes 
     public int CompareTo(Structure other)
     {
         if (car.GetFitness() > other.car.GetFitness())
@@ -87,32 +96,8 @@ public class Structure: MonoBehaviour, IComparable<Structure>
         }
     }
 
-    /* Mutation function.
-     *
-     * mutationRate: as a percentage
-    */
-    public void Mutate(int mutationRate, float mutationRadius)
-    {
-        for (int i = 0; i < genome.Count; i++)
-        {
-            genome[i] = (UnityEngine.Random.Range(0, 100) <= mutationRate) ? genome[i] += UnityEngine.Random.Range(-mutationRadius, mutationRadius) : genome[i];
-        }
-    }
-
-    // Returns a deep copied array of this geneome 
-    public List<float> deepCopyGenome()
-    {
-        List<float> genomeCopy = new List<float>();
-        for (int i = 0; i < genome.Count; i++)
-        {
-            genomeCopy.Add(genome[i]);
-        }
-
-        return genomeCopy;
-    }
 
     #region Load/Save genomes from a file
-    // Loads the biases and weights from within a file into the neural network.
     public void LoadGenomeFromFile(string fileName)
     {
         string filePath = WEIGHTS_PATH + fileName;
@@ -138,7 +123,6 @@ public class Structure: MonoBehaviour, IComparable<Structure>
         }
     }
 
-    // Saves the biases and weights within the network to a file.
     public void SaveGenomeToFile()
     {
         File.Create(SAVE_PATH).Close();

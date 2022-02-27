@@ -30,13 +30,11 @@ public class Simulation : MonoBehaviour
             }
             catch
             {
-                Debug.Log("Weights file doesn't exist");
                 genePool = new Genepool(new List<Structure>(), POPULATION_SIZE, MUTATION_RATE, MUTATION_RADIUS);
             }
         }
         else
         {
-            Debug.Log("Weights file not set");
             genePool = new Genepool(new List<Structure>(), POPULATION_SIZE, MUTATION_RATE, MUTATION_RADIUS);
         }
 

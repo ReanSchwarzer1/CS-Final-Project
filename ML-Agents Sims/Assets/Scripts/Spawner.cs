@@ -28,11 +28,18 @@ public class Spawner : MonoBehaviour
         StartCoroutine(nameof(Spawn));
     }
     
+
+    private GameObject GetRandomSpawnableFromList()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, spawnableObjects.Count);
+        return spawnableObjects[randomIndex];
+    }
+
     private IEnumerator Spawn()
     {
         var spawned = Instantiate(GetRandomSpawnableFromList(), transform.position, transform.rotation, transform);
         spawnedObjects.Add(spawned);
-        
+
         yield return new WaitForSeconds(Random.Range(minSpawnIntervalInSeconds, maxSpawnIntervalInSeconds));
         StartCoroutine(nameof(Spawn));
     }
@@ -43,11 +50,6 @@ public class Spawner : MonoBehaviour
             Destroy(spawnedObjects[i]);
             spawnedObjects.RemoveAt(i);
         }
-    }
-    private GameObject GetRandomSpawnableFromList()
-    {
-        int randomIndex = UnityEngine.Random.Range(0, spawnableObjects.Count);
-        return spawnableObjects[randomIndex];
     }
 }
 

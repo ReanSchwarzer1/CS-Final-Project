@@ -17,17 +17,28 @@ public class Jumper : Agent
     private int score = 0;
     
     public event Action OnReset;
-    
-    public override void Initialize()
+
+
+    private void OnCollisionEnter(Collision collidedObj)
     {
-        rBody = GetComponent<Rigidbody>();
-        startingPosition = transform.position;
+        if (collidedObj.gameObject.CompareTag("Street"))
+            jumpIsReady = true;
+
+        else if (collidedObj.gameObject.CompareTag("Mover") || collidedObj.gameObject.CompareTag("DoubleMover"))
+        {
+            AddReward(-1.0f);
+            EndEpisode();
+        }
     }
 
-    private void FixedUpdate()
+    private void OnTriggerEnter(Collider collidedObj)
     {
-        if(jumpIsReady)
-            RequestDecision();
+        if (collidedObj.gameObject.CompareTag("score"))
+        {
+            AddReward(0.1f);
+            score++;
+            ScoreCollector.Instance.AddScore(score);
+        }
     }
 
     public override void OnActionReceived(float[] vectorAction)
@@ -57,7 +68,19 @@ public class Jumper : Agent
             jumpIsReady = false;
         }
     }
-    
+
+    public override void Initialize()
+    {
+        rBody = GetComponent<Rigidbody>();
+        startingPosition = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        if (jumpIsReady)
+            RequestDecision();
+    }
+
     private void Reset()
     {
         score = 0;
@@ -70,27 +93,7 @@ public class Jumper : Agent
         OnReset?.Invoke();
     }
 
-    private void OnCollisionEnter(Collision collidedObj)
-    {
-        if (collidedObj.gameObject.CompareTag("Street"))
-            jumpIsReady = true;
-        
-        else if (collidedObj.gameObject.CompareTag("Mover") || collidedObj.gameObject.CompareTag("DoubleMover"))
-        {
-            AddReward(-1.0f);
-            EndEpisode();
-        }
-    }
-
-    private void OnTriggerEnter(Collider collidedObj)
-    {
-        if (collidedObj.gameObject.CompareTag("score"))
-        {
-            AddReward(0.1f);
-            score++;
-            ScoreCollector.Instance.AddScore(score);
-        }
-    }
+ 
 }
 
 

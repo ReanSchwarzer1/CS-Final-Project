@@ -9,8 +9,6 @@ public class NeuralNetwork
     private float[][] biases;
     private float[][][] weights;
 
-    // Defines the architecture of this neural network as a list.
-    // [4, 7, 4] = Input layer of 4, hidden layer of 7, output layer of 4
     public NeuralNetwork(int[] layers)
     {
         this.layers = new int[layers.Length];
@@ -71,23 +69,18 @@ public class NeuralNetwork
     }
     #endregion
 
-    // Activation function that uses Tanh
     public float activate(float value)
     {
         return (float)Math.Tanh(value);
     }
 
-    // Feeds the information forward through the neural network and returns the
-    // index of the output node with the most stimulus
     public int FeedForward(float[] inputs)
     {
-        // Initialize the input layer values
         for (int i = 0; i < inputs.Length; i++)
         {
             neurons[0][i] = inputs[i];
         }
 
-        // Feed input layers forwards across the whole Neural Net
         for (int i = 1; i < layers.Length; i++)
         {
             for (int j = 0; j < neurons[i].Length; j++)
@@ -101,11 +94,10 @@ public class NeuralNetwork
             }
         }
 
-        // Argmax: Get the index of the highest value in the list
+
         return GetMaxIndex(neurons[neurons.Length - 1]);
     }
 
-    // Configures the weights and biases of the neural network using a 1D list
     public void ConfigureNeuralNetwork(List<float> genome)
     {
         int index = 0;
@@ -131,7 +123,6 @@ public class NeuralNetwork
         }
     }
 
-    // Argmax function
     public int GetMaxIndex(float[] anArray)
     {
         int index = 0;
