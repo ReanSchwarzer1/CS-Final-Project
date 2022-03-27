@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Main.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: 9a583293257ae3b48992f9c48e4d8629
   - enabled: 1
     path: Assets/Scenes/ImLearningAR.unity
     guid: bb19cf75fc4d55646a5095cef61cd628
